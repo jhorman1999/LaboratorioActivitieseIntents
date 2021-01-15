@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText mensaje=(EditText)findViewById(R.id.mensajeTexto);
-        String messageText= mensaje.getText().toString();
 
 
 
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         String messageText= mensaje.getText().toString();
 
 
-        
+
 
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
