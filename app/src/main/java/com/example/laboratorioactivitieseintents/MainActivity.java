@@ -20,11 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void enviarMensaje(View v){
-
+        //pedir datos
         EditText mensaje=(EditText)findViewById(R.id.mensajeTexto);
         String messageText= mensaje.getText().toString();
-
-
+        //iniciar intent para llamar aplicaciones
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT,messageText);
