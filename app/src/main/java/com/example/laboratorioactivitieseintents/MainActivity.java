@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         String messageText= mensaje.getText().toString();
 
 
-
-
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT,messageText);
